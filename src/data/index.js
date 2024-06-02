@@ -53,22 +53,22 @@ const experiences = [
 
 const portfolio = [
   {
-    name: "Open Source Computer Science Repo",
-    description:
-      "A GitHub repo with over 17,000 stars containing a curated list of free online courses from reputable universities that satisfy undergraduate computer science requirements.",
+    name: "Auth autentification",
+    description: "A project using autentification",
     image: oscs,
+    lien: "https://task2-0.vercel.app/signup",
   },
   {
     name: "Dev Notes",
-    description:
-      "A newsletter with over 6,000 readers made for software developers to keep up with this rapidly evolving industry, with a sister platform in progress.",
+    description: "Inside the app where you can see an basic crud application",
     image: devnotes,
+    lien: "https://task2-0.vercel.app/signin",
   },
   {
-    name: "Visually Understanding Algorithms",
-    description:
-      "A showcase of animated algorithms coded using TypeScript, with the video garnering over 400,000 views.",
+    name: "Weather App",
+    description: "Using OpenWeather api to render weather where you are",
     image: algorithms,
+    lien: "https://weather-app-fixed.vercel.app",
   },
 ];
 
