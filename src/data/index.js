@@ -1,4 +1,4 @@
-import { algorithms, devnotes, oscs } from "../assets";
+import { algorithms, devnotes, oscs, cv } from "../assets";
 
 export const navLinks = [
   {
@@ -74,8 +74,8 @@ const portfolio = [
     name: "CV",
     description:
       "There you can see my CV, I have 2 master degree one in accounting and the other in research",
-    image: algorithms,
-    lien: "https://weather-app-fixed.vercel.app",
+    image: cv,
+    lien: "https://entreprise.francetravail.fr/docnums/portfolio-usager/eJhAPFPW917YIl4p1quq5vJ8oHyMol9D/CV_LOIC_FERNANDEZ-Dev-Front-End.pdf?Expires=1717373856&Signature=p8BA%2Bmz3SFpe%2FHAnvasqIIc7YzU%3D",
   },
 ];
 
