@@ -1,6 +1,6 @@
-import emailjs from "@emailjs/browser";
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
@@ -19,6 +19,35 @@ const Contact = () => {
   useEffect(() => {
     controls.start("show");
   }, [controls]);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prevForm) => ({
+      ...prevForm,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const SERVICE_ID = "service_8qme53q"; // Remplacez par votre ID de service EmailJS
+    const TEMPLATE_ID = "template_g1aools"; // Remplacez par votre ID de modèle EmailJS
+    const USER_ID = "ajjBbiEx-igK3yhgN"; // Remplacez par votre ID d'utilisateur EmailJS
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+        setLoading(false);
+        setForm({ name: "", email: "", message: "" });
+      },
+      (error) => {
+        console.log(error.text);
+        setLoading(false);
+      }
+    );
+  };
 
   return (
     <div className="md:m-12 md:px-48 flex flex-col sm:flex-row gap-10 overflow-hidden">
@@ -45,27 +74,33 @@ const Contact = () => {
         <h3 className={styles.sectionText}>Contact</h3>
 
         <form
-          action="https://getform.io/f/lbjkgdla"
-          method="POST"
+          ref={formRef}
+          onSubmit={handleSubmit}
           className="mt-12 gap-4 flex flex-col"
         >
           <span className="text-white font-medium mt-3">Full Name</span>
           <input
             type="text"
             name="name"
+            value={form.name}
+            onChange={handleChange}
             placeholder="Enter your full name"
             className="bg-tertiary p-4 text-white border font-medium"
           />
           <span className="text-white font-medium mt-3">Email Address</span>
           <input
-            type="text"
+            type="email"
             name="email"
+            value={form.email}
+            onChange={handleChange}
             placeholder="Enter your email address"
             className="bg-tertiary p-4 text-white border font-medium"
           />
           <span className="text-white font-medium mt-3">Message</span>
           <textarea
             name="message"
+            value={form.message}
+            onChange={handleChange}
             placeholder="Enter your message"
             rows="10"
             className="bg-tertiary p-4 text-white border font-medium"
