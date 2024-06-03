@@ -70,6 +70,13 @@ const portfolio = [
     image: algorithms,
     lien: "https://weather-app-fixed.vercel.app",
   },
+  {
+    name: "CV",
+    description:
+      "There you can see my CV, I have 2 master degree one in accounting and the other in research",
+    image: algorithms,
+    lien: "https://weather-app-fixed.vercel.app",
+  },
 ];
 
 export { experiences, portfolio };
