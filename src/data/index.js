@@ -1,4 +1,4 @@
-import { algorithms, devnotes, oscs, cv } from "../assets";
+import { algorithms, devnotes, oscs, cvcapture } from "../assets";
 
 export const navLinks = [
   {
@@ -74,7 +74,7 @@ const portfolio = [
     name: "CV",
     description:
       "There you can see my CV, I have 2 master degree one in accounting and the other in research",
-    image: cv,
+    image: cvcapture,
     lien: "https://drive.google.com/file/d/1T4-5MiWhpEhfDHm0oAnhteG6r_4Rh8_8/view?usp=sharing",
   },
 ];
