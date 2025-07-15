@@ -53,14 +53,16 @@ const experiences = [
 
 const portfolio = [
   {
-    name: "Auth autentification",
-    description: "A project using autentification",
+    name: "Airbnb-Clone",
+    description:
+      "An Airbnb clone using next.js and django with an postgressql for data",
     image: oscs,
-    lien: "https://task2-0.vercel.app/signup",
+    lien: "https://airbnb-clone-g42s.vercel.app/",
   },
   {
     name: "Dev Notes",
-    description: "Inside the app where you can see an basic crud application",
+    description:
+      "Inside the app where you can see an basic crud application with an Auth autentification",
     image: devnotes,
     lien: "https://task2-0.vercel.app/signin",
   },
