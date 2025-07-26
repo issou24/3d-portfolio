@@ -1,4 +1,4 @@
-import { algorithms, devnotes, oscs, cvcapture } from "../assets";
+import { algorithms, devnotes, airbnb, cvcapture } from "../assets";
 
 export const navLinks = [
   {

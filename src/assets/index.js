@@ -4,7 +4,7 @@ import menu from "./menu.svg";
 
 import algorithms from "./algorithms.png";
 import devnotes from "./devnotes.png";
-import oscs from "./oscs.png";
+import airbnb from "./airbnb.png";
 import cvcapture from "./cvcapture.png";
 
-export { algorithms, close, devnotes, logo, menu, oscs, cvcapture };
+export { algorithms, close, devnotes, logo, menu, airbnb, cvcapture };
