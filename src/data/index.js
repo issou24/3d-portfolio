@@ -56,7 +56,7 @@ const portfolio = [
     name: "Airbnb-Clone",
     description:
       "An Airbnb clone using next.js and django with an postgressql for data",
-    image: oscs,
+    image: airbnb,
     lien: "https://airbnb-clone-g42s.vercel.app/",
   },
   {
