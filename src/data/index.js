@@ -77,7 +77,7 @@ const portfolio = [
     description:
       "There you can see my CV, I have 2 master degree one in accounting and the other in research",
     image: cvcapture,
-    lien: "https://drive.google.com/file/d/1Yt8niFU39kY2IucIU7ux-Nj9oqjrjQdc/view?usp=sharing",
+    lien: "https://drive.google.com/file/d/1Zh5UnnwORJuk1CDXiKgV3CPvu5fYhXuC/view?usp=sharing",
   },
 ];
 
